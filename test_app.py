@@ -1,4 +1,4 @@
-# test_app.py
+# test_app.py to test file
 
 import pytest
 from app import create_app
@@ -17,4 +17,9 @@ def test_home(client):
     assert response.status_code == 200
     expected_text = 'Wow CI-CD Pipeline is been developed updated Hurrayyyyy..'
     assert expected_text.encode() in response.data
+
+
+
+
+
 
